@@ -1,8 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem;
-  text-align: center;
+  width: 100%;
 }
 
 .logo {
@@ -11,32 +10,35 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;            /* spacing between img and text */
 }
 
 .card {
   padding: 2em;
+  text-align: left;
 }
 
-.read-the-docs {
-  color: #888;
+.container * {
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.box {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: left; /* ensures text in each box is left-aligned */
 }

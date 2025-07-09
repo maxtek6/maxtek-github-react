@@ -1,33 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import ContactForm from './ContactForm';
+import ProjectList from './ProjectList';
+import maxtekLogo from './assets/logo.jpeg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <title>Maxtek Consulting</title>
+      <div className="logo-container">
+        <img src={maxtekLogo} className="logo" alt="Maxtek logo" />
+        <h1>Maxtek Consulting</h1>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      
+      <div className="container">
+      <div className="box">
+        <h2>Items</h2>
+        <p>We can provide expertise in the following areas:</p>
+        <ul>
+          <li>C, C++, and Go</li>
+          <li>CMake build systems</li>
+          <li>Linux kernel development</li>
+          <li>Embedded systems</li>
+          <li>Open source projects</li>
+          <li>CI/CD integration</li>
+        </ul>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="box">
+        <h2>Projects</h2>
+        <p>Here are some of our active projects:</p>
+        <ProjectList />
+      </div>
+      <div className="box">
+        <ContactForm />
+      </div>
+    </div>
     </>
   )
 }
