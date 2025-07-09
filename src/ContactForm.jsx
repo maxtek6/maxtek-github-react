@@ -39,8 +39,6 @@ function ContactForm() {
 
     return (
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '400px' }}>
-            <h2>Contact</h2>
-            <p>For help with custom software or open source development.</p>
             <input
                 type="text"
                 name="name"
