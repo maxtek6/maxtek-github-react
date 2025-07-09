@@ -15,7 +15,7 @@ function App() {
       
       <div className="container">
       <div className="box">
-        <h2>Items</h2>
+        <h2>Services</h2>
         <p>We can provide expertise in the following areas:</p>
         <ul>
           <li>C, C++, and Go</li>
@@ -30,6 +30,7 @@ function App() {
         <h2>Projects</h2>
         <p>Here are some of our active projects:</p>
         <ProjectList />
+        <p>Check out our <a href="https://github.com/maxtek6">GitHub</a> for more projects.</p>
       </div>
       <div className="box">
         <ContactForm />

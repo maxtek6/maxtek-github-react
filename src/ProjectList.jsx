@@ -2,8 +2,7 @@ import { useState } from 'react';
 
 
 const projects = {
-  "sigfn": "bind functions to signals.",
-  "threadpool": "maxtek threadpool library.",
+  "wxReactView": "A React component for wxWidgets WebView.",
   "hyperpage": "Fast and efficient solution for storing static content."
 };
 
