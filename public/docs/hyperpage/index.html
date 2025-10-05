@@ -119,16 +119,33 @@ Usage</h1>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 <span class="tt">hyperpack</span></h2>
 <p>Hyperpack is a command line utility used to create a hyperpage database file:</p>
-<div class="fragment"><div class="line">Usage: hyperpack [--help] [--output VAR] directory</div>
+<div class="fragment"><div class="line">Usage: hyperpack [--help] [--version] [--output VAR] [--verbose] directories...</div>
 <div class="line"> </div>
 <div class="line">Positional arguments:</div>
-<div class="line">  directory      Directory to scan for files to pack into the hyperpage database [required]</div>
+<div class="line">  directories    Directories to scan for files to pack into the hyperpage database [nargs: 1 or more] [required]</div>
 <div class="line"> </div>
 <div class="line">Optional arguments:</div>
 <div class="line">  -h, --help     shows help message and exits</div>
+<div class="line">  -v, --version  prints version information and exits</div>
 <div class="line">  -o, --output   Output file for the hyperpage database [nargs=0..1] [default: &quot;hyperpage.db&quot;]</div>
-</div><!-- fragment --><p>It will iterate through a given directory, storing its files based on paths relative to the given directory. It will also detect the mime type and store the contents of each file.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+<div class="line">  -v, --verbose  Show detailed output information</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+Note on Overwriting</h2>
+<p>If two or more files share the same <b>relative subpath</b> (i.e., the same path within their respective parent directories), the file from the <b>rightmost directory</b> specified on the command line will overwrite the others in the final archive.</p>
+<p>Only <b>exact path matches</b> are considered conflicts — differing subdirectories or filenames will coexist as separate entries.</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+Example</h3>
+<p>Suppose you run: </p><div class="fragment"><div class="line">hyperpack -o output.hp dir1 dir2 dir3</div>
+</div><!-- fragment --><p> And the directories contain: </p><div class="fragment"><div class="line">dir1/Subdir1/index.html</div>
+<div class="line">dir2/Subdir2/index.html</div>
+<div class="line">dir3/Index.html</div>
+</div><!-- fragment --><p> These will result in three distinct files inside the archive: </p><div class="fragment"><div class="line">Subdir1/index.html</div>
+<div class="line">/Subdir2/index.html</div>
+<div class="line">/Index.html</div>
+</div><!-- fragment --><p> However, if two or more directories contain the same relative path, for example: </p><div class="fragment"><div class="line">dir1/public/index.html</div>
+<div class="line">dir2/public/index.html</div>
+</div><!-- fragment --><p> then the file from dir2 (the rightmost one) will overwrite the file from dir1 in the resulting archive entry: </p><div class="fragment"><div class="line">/public/index.html</div>
+</div><!-- fragment --> <h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
 Documentation and Example</h2>
 <p>This is only intended to cover basic usage. For more info about the API, see the <a href="https://maxtek6.github.io/docs/hyperpage">docs</a>. To see how hyperpage is used in a basic use case, the <a href="https://github.com/maxtek6/hyperpage/tree/master/example">example</a> should be helpful. </p>
 </div></div><!-- PageDoc -->

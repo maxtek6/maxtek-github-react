@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['writer_0',['writer',['../classhyperpage_1_1writer.html',1,'hyperpage::writer'],['../classhyperpage_1_1writer.html#af993d4d20d567d9ac8c3bbe43313d722',1,'hyperpage::writer::writer()']]]
+  ['store_0',['store',['../classhyperpage_1_1writer.html#a027c6b9de6186a02bd7c78f6ace82acf',1,'hyperpage::writer']]]
 ];

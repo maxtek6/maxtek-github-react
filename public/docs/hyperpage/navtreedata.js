@@ -29,7 +29,10 @@ var NAVTREE =
     [ "Usage", "index.html#autotoc_md2", [
       [ "<span class=\"tt\">hyperpage</span>", "index.html#autotoc_md3", null ],
       [ "<span class=\"tt\">hyperpack</span>", "index.html#autotoc_md4", null ],
-      [ "Documentation and Example", "index.html#autotoc_md5", null ]
+      [ "Note on Overwriting", "index.html#autotoc_md5", [
+        [ "Example", "index.html#autotoc_md6", null ]
+      ] ],
+      [ "Documentation and Example", "index.html#autotoc_md7", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
