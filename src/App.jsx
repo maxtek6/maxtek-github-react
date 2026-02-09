@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { Header, HeaderName, HeaderNavigation, HeaderMenuItem, Theme } from '@carbon/react'
-import About from './About'
-import Projects from './Projects'
-import Contact from './Contact'
+import { Theme } from '@carbon/react'
+import AppHeader from './components/AppHeader'
+import Projects from './content/Projects'
+import Contact from './content/Contact'
 
 function App() {
   const [activeSection, setActiveSection] = useState('about')
@@ -12,9 +12,9 @@ function App() {
       case 'about':
         return <h1>About Me</h1>
       case 'projects':
-        return <h1>Projects</h1>
+        return <Projects />
       case 'contact':
-        return <h1>Contact</h1>
+        return <Contact />
       default:
         return <h1>About Me</h1>
     }
@@ -23,32 +23,11 @@ function App() {
   return (
     <>
       <Theme theme="g100">
-        <Header aria-label="maxtek">
-          <HeaderName href="/" prefix="">
-            maxtek
-          </HeaderName>
-          <HeaderNavigation aria-label="Main navigation">
-            <HeaderMenuItem
-              isActive={activeSection === 'about'}
-              onClick={() => setActiveSection('about')}
-            >
-              About
-            </HeaderMenuItem>
-            <HeaderMenuItem
-              isActive={activeSection === 'projects'}
-              onClick={() => setActiveSection('projects')}
-            >
-              Projects
-            </HeaderMenuItem>
-            <HeaderMenuItem
-              isActive={activeSection === 'contact'}
-              onClick={() => setActiveSection('contact')}
-            >
-              Contact
-            </HeaderMenuItem>
-          </HeaderNavigation>
-        </Header>
-        <div style={{ padding: '2rem' }}>
+        <AppHeader
+          activeSection={activeSection}
+          onSectionChange={setActiveSection}
+        />
+        <div className="app-content">
           {renderContent()}
         </div>
       </Theme>
