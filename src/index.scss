@@ -1,0 +1,34 @@
+@use '@carbon/react' with (
+  $font-path: '@ibm/plex'
+);
+
+@use '@carbon/styles/scss/themes';
+@use '@carbon/styles/scss/theme';
+
+.theme-section {
+  padding: 1rem;
+  background: theme.$background;
+  color: theme.$text-primary;
+}
+
+.theme-layer-example {
+  padding: 1rem;
+  background: theme.$background;
+  color: theme.$text-primary;
+}
+
+.theme-layer-header {
+  margin-block-end: 1rem;
+}
+
+.theme-with-layer {
+  padding: 1rem;
+  background: theme.$layer;
+  color: theme.$text-primary;
+}
+
+.carbon-storybook-template--annotation--background {
+  margin: 0 !important; /* stylelint-disable-line declaration-no-important */
+  min-block-size: 0 !important; /* stylelint-disable-line declaration-no-important */
+}
+
