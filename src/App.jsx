@@ -1,44 +1,57 @@
-import ContactForm from './ContactForm';
-import ProjectList from './ProjectList';
-import maxtekLogo from './assets/logo.jpeg'
-import './App.css'
+import { useState } from 'react'
+import { Header, HeaderName, HeaderNavigation, HeaderMenuItem, Theme } from '@carbon/react'
+import About from './About'
+import Projects from './Projects'
+import Contact from './Contact'
 
 function App() {
+  const [activeSection, setActiveSection] = useState('about')
+
+  const renderContent = () => {
+    switch (activeSection) {
+      case 'about':
+        return <h1>About Me</h1>
+      case 'projects':
+        return <h1>Projects</h1>
+      case 'contact':
+        return <h1>Contact</h1>
+      default:
+        return <h1>About Me</h1>
+    }
+  }
 
   return (
     <>
-      <title>Maxtek Consulting</title>
-      <div className="logo-container">
-        <img src={maxtekLogo} className="logo" alt="Maxtek logo" />
-        <h1>Maxtek Consulting</h1>
-      </div>
-
-      <div className="container">
-        <div className="box">
-          <h2>Services</h2>
-          <p>We can provide expertise in the following areas:</p>
-          <ul>
-            <li>C, C++, and Go</li>
-            <li>CMake build systems</li>
-            <li>Linux kernel development</li>
-            <li>Embedded systems</li>
-            <li>Open source projects</li>
-            <li>CI/CD integration</li>
-          </ul>
+      <Theme theme="g100">
+        <Header aria-label="maxtek">
+          <HeaderName href="/" prefix="">
+            maxtek
+          </HeaderName>
+          <HeaderNavigation aria-label="Main navigation">
+            <HeaderMenuItem
+              isActive={activeSection === 'about'}
+              onClick={() => setActiveSection('about')}
+            >
+              About
+            </HeaderMenuItem>
+            <HeaderMenuItem
+              isActive={activeSection === 'projects'}
+              onClick={() => setActiveSection('projects')}
+            >
+              Projects
+            </HeaderMenuItem>
+            <HeaderMenuItem
+              isActive={activeSection === 'contact'}
+              onClick={() => setActiveSection('contact')}
+            >
+              Contact
+            </HeaderMenuItem>
+          </HeaderNavigation>
+        </Header>
+        <div style={{ padding: '2rem' }}>
+          {renderContent()}
         </div>
-        <div className="box">
-          <h2>Projects</h2>
-          <p>Here are some of our active projects:</p>
-          <ProjectList />
-          <p>Check out our <a href="https://github.com/maxtek6">GitHub</a> for more projects.</p>
-        </div>
-        <div className="box">
-          <h2>Contact</h2>
-          <p>For help with custom software or open source development.</p>
-
-          <ContactForm />
-        </div>
-      </div>
+      </Theme>
     </>
   )
 }
