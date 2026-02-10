@@ -2,43 +2,65 @@
 import {
     Header,
     HeaderContainer,
+    HeaderGlobalBar,
+    HeaderGlobalAction,
     HeaderName,
     HeaderNavigation,
     HeaderMenuItem,
     SkipToContent,
 } from '@carbon/react'
+import { Moon, Sun } from '@carbon/icons-react';
+import { useLocation, useNavigate } from 'react-router-dom'
 
-const AppHeader = ({ activeSection, onSectionChange }) => (
-    <HeaderContainer
-        render={() => (
-            <Header aria-label="Maxtek">
-                <SkipToContent />
-                <HeaderName href="/" prefix="">
-                    Maxtek
-                </HeaderName>
-                <HeaderNavigation aria-label="Main navigation">
-                    <HeaderMenuItem
-                        isActive={activeSection === 'about'}
-                        onClick={() => onSectionChange('about')}
+const NAV_ITEMS = [
+    { label: 'Home', path: '/' },
+    { label: 'Projects', path: '/projects' },
+    { label: 'Contact', path: '/contact' },
+]
+
+const AppHeader = ({ darkMode, setDarkMode }) => {
+    const location = useLocation()
+    const navigate = useNavigate()
+
+    return (
+        <HeaderContainer
+            render={() => (
+                <Header aria-label="Maxtek">
+                    <SkipToContent href="#main-content" />
+                    <HeaderName
+                        href="/"
+                        prefix=""
+                        onClick={(event) => {
+                            event.preventDefault()
+                            navigate('/')
+                        }}
                     >
-                        About
-                    </HeaderMenuItem>
-                    <HeaderMenuItem
-                        isActive={activeSection === 'projects'}
-                        onClick={() => onSectionChange('projects')}
-                    >
-                        Projects
-                    </HeaderMenuItem>
-                    <HeaderMenuItem
-                        isActive={activeSection === 'contact'}
-                        onClick={() => onSectionChange('contact')}
-                    >
-                        Contact
-                    </HeaderMenuItem>
-                </HeaderNavigation>
-            </Header>
-        )}
-    />
-)
+                        Maxtek
+                    </HeaderName>
+                    <HeaderNavigation aria-label="Main navigation">
+                        {NAV_ITEMS.map((item) => (
+                            <HeaderMenuItem
+                                key={item.path}
+                                isActive={location.pathname === item.path}
+                                onClick={() => navigate(item.path)}
+                            >
+                                {item.label}
+                            </HeaderMenuItem>
+                        ))}
+                    </HeaderNavigation>
+                    <HeaderGlobalBar>
+                        <HeaderGlobalAction
+                            aria-label="Toggle dark mode"
+                            onClick={() => setDarkMode(!darkMode)}
+                            isActive={darkMode}
+                        >
+                            {darkMode ? <Moon /> : <Sun />}
+                        </HeaderGlobalAction>
+                    </HeaderGlobalBar>
+                </Header>
+            )}
+        />
+    )
+}
 
 export default AppHeader

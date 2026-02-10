@@ -1,38 +1,44 @@
-import { useState } from 'react'
-import { Theme } from '@carbon/react'
+import { Content, Theme } from '@carbon/react'
+import {
+    Navigate,
+    Outlet,
+    RouterProvider,
+    createHashRouter,
+} from 'react-router-dom'
 import AppHeader from './components/AppHeader'
+import AppContent from './components/AppContent'
+import Home from './content/Home'
 import Projects from './content/Projects'
 import Contact from './content/Contact'
+import { useState } from 'react'
+
+const AppLayout = () => {
+    const defaultDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    const [darkMode, setDarkMode] = useState(defaultDarkMode);
+
+    return (
+        <Theme theme={darkMode ? 'g100' : 'g10'}>
+            <AppHeader darkMode={darkMode} setDarkMode={setDarkMode} />
+            <AppContent><Outlet /></AppContent>
+        </Theme>
+    );
+};
+
+const router = createHashRouter([
+    {
+        path: '/',
+        element: <AppLayout />,
+        children: [
+            { index: true, element: <Home /> },
+            { path: 'projects', element: <Projects /> },
+            { path: 'contact', element: <Contact /> },
+            { path: '*', element: <Navigate to="/" replace /> },
+        ],
+    },
+])
 
 function App() {
-  const [activeSection, setActiveSection] = useState('about')
-
-  const renderContent = () => {
-    switch (activeSection) {
-      case 'about':
-        return <h1>About Me</h1>
-      case 'projects':
-        return <Projects />
-      case 'contact':
-        return <Contact />
-      default:
-        return <h1>About Me</h1>
-    }
-  }
-
-  return (
-    <>
-      <Theme theme="g100">
-        <AppHeader
-          activeSection={activeSection}
-          onSectionChange={setActiveSection}
-        />
-        <div className="app-content">
-          {renderContent()}
-        </div>
-      </Theme>
-    </>
-  )
+    return <RouterProvider router={router} />
 }
 
 export default App

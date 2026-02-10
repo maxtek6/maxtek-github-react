@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Modal } from '@carbon/react';
+import { Content, Modal, Grid, Column } from '@carbon/react';
 import ContactForm from '../components/ContactForm';
 
 function Contact() {
@@ -25,11 +25,32 @@ function Contact() {
     };
 
     return (
-        <>
-            <ContactForm
-                onSubmitSuccess={handleSubmitSuccess}
-                onSubmitError={handleSubmitError}
-            />
+        <Grid fullWidth>
+            <Column
+                sm={4}   // mobile: full width (4-column grid)
+                md={8}   // tablet: full width
+                lg={8}   // desktop: half width (2 columns total)
+            >
+                <h3>How can we help you?</h3>
+                <p>Whether you are an open source developer looking for guidance, or a business seeking consulting services, we're here to assist you. We offer expertise in the following areas:</p>
+                <ul>
+                    <li>Backend development in C, C++, and Go</li>
+                    <li>CMake build systems</li>
+                    <li>CI/CD integration</li>
+                    <li>Embedded systems</li>
+                </ul>
+            </Column>
+            <Column
+                sm={4}   // mobile: full width (4-column grid)
+                md={8}   // tablet: full width
+                lg={8}   // desktop: half width (2 columns total)
+            >
+
+                <ContactForm
+                    onSubmitSuccess={handleSubmitSuccess}
+                    onSubmitError={handleSubmitError}
+                />
+            </Column>
             <Modal
                 open={isModalOpen}
                 modalHeading={modalHeading}
@@ -39,7 +60,7 @@ function Contact() {
             >
                 <p>{modalMessage}</p>
             </Modal>
-        </>
+        </Grid>
     );
 }
 

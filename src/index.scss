@@ -6,67 +6,6 @@
 @use '@carbon/styles/scss/theme';
 @use '@carbon/styles/scss/spacing' as *;
 
-.theme-section {
-  padding: 1rem;
-  background: theme.$background;
-  color: theme.$text-primary;
-}
-
-.theme-layer-example {
-  padding: 1rem;
-  background: theme.$background;
-  color: theme.$text-primary;
-}
-
-.theme-layer-header {
-  margin-block-end: 1rem;
-}
-
-.theme-with-layer {
-  padding: 1rem;
-  background: theme.$layer;
-  color: theme.$text-primary;
-}
-
-.carbon-storybook-template--annotation--background {
-  margin: 0 !important; /* stylelint-disable-line declaration-no-important */
-  min-block-size: 0 !important; /* stylelint-disable-line declaration-no-important */
-}
-
-.app-content {
-  padding: $spacing-07;
-  padding-top: calc(#{$spacing-07} + #{$spacing-09});
-}
-
 .project-tile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: $spacing-06;
+  margin-bottom: $spacing-03;
 }
-
-.project-tile__content {
-  display: flex;
-  flex-direction: column;
-  gap: $spacing-03;
-}
-
-.project-tile__name {
-  margin: 0;
-}
-
-.project-tile__description {
-  margin: 0;
-}
-
-.project-tile__link {
-  flex-shrink: 0;
-}
-
-.project-tile__links {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: $spacing-04;
-}
-

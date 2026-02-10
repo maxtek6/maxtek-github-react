@@ -8,5 +8,10 @@
         "name" : "hyperpage",
         "description" : "Fast and efficient solution for storing web content.",
         "documentation" : "https://maxtek6.github.io/docs/hyperpage"
+    },
+    {
+        "name" : "sigfn",
+        "description" : "C++ library for handling signals.",
+        "documentation" : "https://maxtek6.github.io/docs/sigfn"
     }
 ]

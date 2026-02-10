@@ -54,7 +54,7 @@ function ContactForm({ onSubmitSuccess = () => {}, onSubmitError = () => {} }) {
     };
 
     return (
-        <Form onSubmit={handleSubmit} style={{ maxWidth: '400px' }}>
+        <Form onSubmit={handleSubmit}>
             <Stack gap={5}>
                 <TextInput labelText="Name" id="name" name="name" required />
                 <TextInput labelText="Email" id="email" name="email" type="email" required />
