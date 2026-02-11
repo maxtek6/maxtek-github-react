@@ -7,5 +7,7 @@
 @use '@carbon/styles/scss/spacing' as *;
 
 .project-tile {
-  margin-bottom: $spacing-03;
+  min-height: 144px;
+  margin-bottom: $spacing-01;
+  //border: 1px solid theme.$border-strong-01;
 }

@@ -5,8 +5,6 @@ function AppContent({ children, ...props }) {
         <Content
             style={{
                 display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
                 minHeight: 'calc(100vh - 3rem)',
             }}
             {...props}>
