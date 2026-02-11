@@ -1,22 +1,22 @@
-import { Column, Content, Grid } from '@carbon/react';
+import { Column, Grid, Stack, Tile } from '@carbon/react';
+import OrgGraph from '../components/OrgGraph';
+
+import organizations from '../assets/organizations.json';
 
 function Home() {
     return (
         <Grid>
-            <Column
-                sm={4}   // mobile: full width (4-column grid)
-                md={4}   // tablet: full width
-                lg={6}   // desktop: half width (2 columns total)
-            >
-                <h3>Maxtek</h3>
+            <Column sm={0} md={1} lg={2} xlg={2} max={2} />
+            <Column sm={4} md={4} lg={6} xlg={6} max={6}>
+                <OrgGraph members={organizations} />
             </Column>
-            <Column
-                sm={4}   // mobile: full width (4-column grid)
-                md={4}   // tablet: full width
-                lg={6}   // desktop: half width (2 columns total)
-            >
-                <h3>Consulting</h3>
+            <Column sm={4} md={4} lg={6} xlg={6} max={6}>
+                <Stack gap={3}>
+                    <h3>Maxtek Consulting</h3>
+                    <p>US-based consulting firm specializing in open source software.</p>
+                </Stack>
             </Column>
+            <Column sm={0} md={1} lg={2} xlg={2} max={2} />
         </Grid>
     );
 }

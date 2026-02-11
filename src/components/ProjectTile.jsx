@@ -26,7 +26,6 @@ function ProjectTile({ name, description, documentation }) {
     const projectLink = `https://github.com/maxtek6/${name}`;
     return (
         <Tile className='project-tile'>
-            <Column span={4}>
                 <Stack gap={3}>
                     <Grid>
                         <Column span={2}>
@@ -41,7 +40,6 @@ function ProjectTile({ name, description, documentation }) {
                     </Grid>
                     <LinkStack projectLink={projectLink} documentation={documentation} />
                 </Stack>
-            </Column>
         </Tile>
     )
 }

@@ -34,7 +34,7 @@ function Contact() {
                 xlg={6}
                 max={6}  // max width: full width (4-column grid)
             >
-                <Stack>
+                <Stack gap={3}>
                     <h3>How can we help you?</h3>
                     <p>Whether you are an open source developer looking for guidance, or a business seeking consulting services, we're here to assist you. We offer expertise in the following areas:</p>
                     <UnorderedList>

@@ -13,9 +13,11 @@
     "deploy": "gh-pages -d dist -b master"
   },
   "dependencies": {
+    "@carbon/charts-react": "^1.27.2",
     "@carbon/icons-react": "^11.74.0",
     "@carbon/react": "^1.100.0",
     "gh-pages": "^6.3.0",
+    "motion": "^12.34.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.0.1"
