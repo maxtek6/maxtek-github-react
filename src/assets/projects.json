@@ -1,0 +1,22 @@
+[
+    {
+        "name": "mio",
+        "description": "Header-only cross-platform C++ memory mapping library.",
+        "documentation" : "https://maxtek6.github.io/docs/mio"
+    },
+    {
+        "name" : "hyperpage",
+        "description" : "Fast and efficient solution for storing web content.",
+        "documentation" : "https://maxtek6.github.io/docs/hyperpage"
+    },
+    {
+        "name" : "sigfn",
+        "description" : "C++ library for handling signals.",
+        "documentation" : "https://maxtek6.github.io/docs/sigfn"
+    },
+    {
+        "name" : "threadpool",
+        "description" : "Header-only C++ threadpool.",
+        "documentation" : "https://maxtek6.github.io/docs/threadpool"
+    }
+]

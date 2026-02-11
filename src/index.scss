@@ -1,0 +1,12 @@
+@use '@carbon/react' with (
+  $font-path: '@ibm/plex'
+);
+
+@use '@carbon/styles/scss/themes';
+@use '@carbon/styles/scss/theme';
+@use '@carbon/styles/scss/spacing' as *;
+
+.project-tile {
+  min-height: 144px;
+  border: 1px solid theme.$border-strong-01;
+}

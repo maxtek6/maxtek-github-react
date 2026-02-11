@@ -1,46 +1,47 @@
-import ContactForm from './ContactForm';
-import ProjectList from './ProjectList';
-import maxtekLogo from './assets/logo.jpeg'
-import './App.css'
+import { Content, Theme } from '@carbon/react'
+import {
+  Navigate,
+  Outlet,
+  RouterProvider,
+  createHashRouter,
+} from 'react-router-dom'
+import AppHeader from './components/AppHeader'
+import AppContent from './components/AppContent'
+import Home from './content/Home'
+import Projects from './content/Projects'
+import Contact from './content/Contact'
+import { enable } from '@carbon/feature-flags';
+import { useState } from 'react'
 
-function App() {
+const AppLayout = () => {
+  const defaultDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const [darkMode, setDarkMode] = useState(defaultDarkMode);
+
+  enable('enable-tile-contrast');
 
   return (
-    <>
-      <title>Maxtek Consulting</title>
-      <div className="logo-container">
-        <img src={maxtekLogo} className="logo" alt="Maxtek logo" />
-        <h1>Maxtek Consulting</h1>
-      </div>
+    <Theme theme={darkMode ? 'g100' : 'g10'}>
+        <AppHeader darkMode={darkMode} setDarkMode={setDarkMode} />
+        <AppContent><Outlet /></AppContent>
+    </Theme>
+  );
+};
 
-      <div className="container">
-        <div className="box">
-          <h2>Services</h2>
-          <p>We can provide expertise in the following areas:</p>
-          <ul>
-            <li>C, C++, and Go</li>
-            <li>CMake build systems</li>
-            <li>Linux kernel development</li>
-            <li>Embedded systems</li>
-            <li>Open source projects</li>
-            <li>CI/CD integration</li>
-          </ul>
-        </div>
-        <div className="box">
-          <h2>Projects</h2>
-          <p>Here are some of our active projects:</p>
-          <ProjectList />
-          <p>Check out our <a href="https://github.com/maxtek6">GitHub</a> for more projects.</p>
-        </div>
-        <div className="box">
-          <h2>Contact</h2>
-          <p>For help with custom software or open source development.</p>
+const router = createHashRouter([
+  {
+    path: '/',
+    element: <AppLayout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'projects', element: <Projects /> },
+      { path: 'contact', element: <Contact /> },
+      { path: '*', element: <Navigate to="/" replace /> },
+    ],
+  },
+])
 
-          <ContactForm />
-        </div>
-      </div>
-    </>
-  )
+function App() {
+  return <RouterProvider router={router} />
 }
 
 export default App
