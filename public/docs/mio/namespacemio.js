@@ -1,0 +1,36 @@
+var namespacemio =
+[
+    [ "detail", "namespacemio_1_1detail.html", "namespacemio_1_1detail" ],
+    [ "basic_mmap", "structmio_1_1basic__mmap.html", "structmio_1_1basic__mmap" ],
+    [ "basic_shared_mmap", "classmio_1_1basic__shared__mmap.html", "classmio_1_1basic__shared__mmap" ],
+    [ "basic_mmap_sink", "namespacemio.html#a7a97516e4420e05ee38fff7e48461e0c", null ],
+    [ "basic_mmap_source", "namespacemio.html#ad7755f189827a4845ed33ef075f884ba", null ],
+    [ "basic_shared_mmap_sink", "namespacemio.html#a6f0a46d78ec95b5fee7dba0e6cc95001", null ],
+    [ "basic_shared_mmap_source", "namespacemio.html#a7a9a9b8df4883923de6ae6a6e20d9748", null ],
+    [ "file_handle_type", "namespacemio.html#ae9849b4e584b2d953f83cfd29a8f948f", null ],
+    [ "mmap_sink", "namespacemio.html#aa24db79bbb437bf26eba583385c9a9cc", null ],
+    [ "mmap_source", "namespacemio.html#a16e95fe46bbad947821a1c4d58c80b84", null ],
+    [ "shared_mmap_sink", "namespacemio.html#aeb1e48eeaf39e17a0e9fbf5a6720d1a1", null ],
+    [ "shared_mmap_source", "namespacemio.html#abfdbe8a7a9bad7666e05cb2f774df6fd", null ],
+    [ "shared_ummap_sink", "namespacemio.html#acfe540d14e494e86628871e4e44221e1", null ],
+    [ "shared_ummap_source", "namespacemio.html#a5b7ebc2439d2e401bff8452c6f047868", null ],
+    [ "ummap_sink", "namespacemio.html#ae62287f76d7bff4a44b86f6958315a72", null ],
+    [ "ummap_source", "namespacemio.html#ad6c5e59db8502de2db84b748649721f8", null ],
+    [ "access_mode", "namespacemio.html#a199ab002fa1e517f90cf1424750edf69", [
+      [ "read", "namespacemio.html#a199ab002fa1e517f90cf1424750edf69aecae13117d6f0584c25a9da6c8f8415e", null ],
+      [ "write", "namespacemio.html#a199ab002fa1e517f90cf1424750edf69aefb2a684e4afb7d55e6147fbe5a332ee", null ]
+    ] ],
+    [ "make_mmap", "namespacemio.html#a44abc7fcba0fbcc938029241b3fa3a0e", null ],
+    [ "make_mmap_sink", "namespacemio.html#af5d7d6f67041bd9fbae1ef0fe250b60d", null ],
+    [ "make_mmap_sink", "namespacemio.html#a458071668333395b6cf9eb932b5143be", null ],
+    [ "make_mmap_source", "namespacemio.html#a457598aac30b946c47c282a70d18b029", null ],
+    [ "make_mmap_source", "namespacemio.html#af516103d0872272b1ad91f5c0ba8d46d", null ],
+    [ "make_offset_page_aligned", "namespacemio.html#a8241a662aa47c5f64086830e3f913c99", null ],
+    [ "operator!=", "namespacemio.html#a4a85c684ad267a93cd59818325e13f15", null ],
+    [ "operator<", "namespacemio.html#a4e4d900a5ff48da82280ddfb66a19f64", null ],
+    [ "operator<=", "namespacemio.html#a7439bd00e3f54a49c3ed1a7e55c28407", null ],
+    [ "operator==", "namespacemio.html#a792b53efe44045170c43ce9d0ed38d2d", null ],
+    [ "operator>", "namespacemio.html#a61a5f31547c8a8850b325470e76b0bac", null ],
+    [ "operator>=", "namespacemio.html#af7f368cc620694bab74161469a2da094", null ],
+    [ "page_size", "namespacemio.html#a5fa19e76f930339fbeb51ad691b0bfd3", null ]
+];

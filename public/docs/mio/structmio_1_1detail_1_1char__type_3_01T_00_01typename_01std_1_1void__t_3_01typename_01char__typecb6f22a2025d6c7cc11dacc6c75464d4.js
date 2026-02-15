@@ -1,0 +1,4 @@
+var structmio_1_1detail_1_1char__type_3_01T_00_01typename_01std_1_1void__t_3_01typename_01char__typecb6f22a2025d6c7cc11dacc6c75464d4 =
+[
+    [ "type", "structmio_1_1detail_1_1char__type_3_01T_00_01typename_01std_1_1void__t_3_01typename_01char__typecb6f22a2025d6c7cc11dacc6c75464d4.html#a1cd2113b07e34b1d16710548106aa64f", null ]
+];

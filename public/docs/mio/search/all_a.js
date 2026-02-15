@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['make_5fmmap_0',['make_mmap',['../namespacemio.html#a44abc7fcba0fbcc938029241b3fa3a0e',1,'mio']]],
+  ['make_5fmmap_5fsink_1',['make_mmap_sink',['../namespacemio.html#af5d7d6f67041bd9fbae1ef0fe250b60d',1,'mio::make_mmap_sink(const MappingToken &amp;token, mmap_sink::size_type offset, mmap_sink::size_type length, std::error_code &amp;error)'],['../namespacemio.html#a458071668333395b6cf9eb932b5143be',1,'mio::make_mmap_sink(const MappingToken &amp;token, std::error_code &amp;error)']]],
+  ['make_5fmmap_5fsource_2',['make_mmap_source',['../namespacemio.html#a457598aac30b946c47c282a70d18b029',1,'mio::make_mmap_source(const MappingToken &amp;token, mmap_source::size_type offset, mmap_source::size_type length, std::error_code &amp;error)'],['../namespacemio.html#af516103d0872272b1ad91f5c0ba8d46d',1,'mio::make_mmap_source(const MappingToken &amp;token, std::error_code &amp;error)']]],
+  ['make_5foffset_5fpage_5faligned_3',['make_offset_page_aligned',['../namespacemio.html#a8241a662aa47c5f64086830e3f913c99',1,'mio']]],
+  ['map_4',['map',['../structmio_1_1basic__mmap.html#a0e0448c6898bfe229e5f6f7f83d9536f',1,'mio::basic_mmap::map(const String &amp;path, const size_type &amp;offset, const size_type &amp;length, std::error_code &amp;error)'],['../structmio_1_1basic__mmap.html#ae2e43d8419619361a84c9f8feed22e53',1,'mio::basic_mmap::map(const String &amp;path, std::error_code &amp;error)'],['../structmio_1_1basic__mmap.html#aa8aef9a56d889cdac51875e4bafa4389',1,'mio::basic_mmap::map(const handle_type &amp;handle, const size_type &amp;offset, const size_type &amp;length, std::error_code &amp;error)'],['../structmio_1_1basic__mmap.html#a3bcb80ff8f09553188fe00c7c21a1ed7',1,'mio::basic_mmap::map(const handle_type &amp;handle, std::error_code &amp;error)'],['../classmio_1_1basic__shared__mmap.html#a80be05fbd97eb1ddf5a9572633a05c6e',1,'mio::basic_shared_mmap::map(const String &amp;path, const size_type &amp;offset, const size_type &amp;length, std::error_code &amp;error)'],['../classmio_1_1basic__shared__mmap.html#a0a1da0e7748c23d0df5ddb708e480a35',1,'mio::basic_shared_mmap::map(const String &amp;path, std::error_code &amp;error)'],['../classmio_1_1basic__shared__mmap.html#a4cb74aa7d34d5b31a759f96fd002b914',1,'mio::basic_shared_mmap::map(const handle_type &amp;handle, const size_type &amp;offset, const size_type &amp;length, std::error_code &amp;error)'],['../classmio_1_1basic__shared__mmap.html#aed900f974adcce1c22862420851fec78',1,'mio::basic_shared_mmap::map(const handle_type &amp;handle, std::error_code &amp;error)']]],
+  ['map_5fentire_5ffile_5',['map_entire_file',['../namespacemio.html#a171b79c926b315b6939b206ad64869f5af46f1a6ab1149ea0286c9d7ff8a36338',1,'mio']]],
+  ['mapped_5flength_6',['mapped_length',['../structmio_1_1basic__mmap.html#aa406236e6444c3e2f4d1b1ae1afceffe',1,'mio::basic_mmap::mapped_length()'],['../classmio_1_1basic__shared__mmap.html#a1f4ec7bbf87d75bc89026719456eb3b3',1,'mio::basic_shared_mmap::mapped_length()']]],
+  ['mapping_7',['How to create a mapping',['../index.html#autotoc_md2',1,'']]],
+  ['mapping_5fhandle_8',['mapping_handle',['../structmio_1_1basic__mmap.html#a6587af382dc2518e6e761f0d206fd066',1,'mio::basic_mmap::mapping_handle()'],['../classmio_1_1basic__shared__mmap.html#aaf5187bb744c0d8777795fdc2a0f1a0c',1,'mio::basic_shared_mmap::mapping_handle()']]],
+  ['mapping_5foffset_9',['mapping_offset',['../structmio_1_1basic__mmap.html#a5d16da85e88826982b27f6374e706794',1,'mio::basic_mmap']]],
+  ['mio_10',['mio',['../namespacemio.html',1,'mio'],['../index.html',1,'mio'],['../index.html#autotoc_md0',1,'mio']]],
+  ['mio_2ehpp_11',['mio.hpp',['../mio_8hpp.html',1,'']]],
+  ['mio_3a_3adetail_12',['detail',['../namespacemio_1_1detail.html',1,'mio']]],
+  ['mmap_2ehpp_13',['mmap.hpp',['../mmap_8hpp.html',1,'']]],
+  ['mmap_5fsink_14',['mmap_sink',['../namespacemio.html#aa24db79bbb437bf26eba583385c9a9cc',1,'mio']]],
+  ['mmap_5fsource_15',['mmap_source',['../namespacemio.html#a16e95fe46bbad947821a1c4d58c80b84',1,'mio']]],
+  ['mmap_5ftype_16',['mmap_type',['../classmio_1_1basic__shared__mmap.html#a9cdf7fbd990031302533440093555261',1,'mio::basic_shared_mmap']]]
+];

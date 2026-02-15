@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['c_5fstr_0',['c_str',['../namespacemio_1_1detail.html#a18d99fd1d4fce896928cd88b8779ca5c',1,'mio::detail::c_str(const String &amp;path)'],['../namespacemio_1_1detail.html#a17d6189e629eca56f534865e92785ac8',1,'mio::detail::c_str(String path)']]],
+  ['cbegin_1',['cbegin',['../structmio_1_1basic__mmap.html#a1a0a685bea33cc3170d8172817ac4510',1,'mio::basic_mmap::cbegin()'],['../classmio_1_1basic__shared__mmap.html#ab37aef5fa6ced48837086a9109e78af0',1,'mio::basic_shared_mmap::cbegin()']]],
+  ['cend_2',['cend',['../structmio_1_1basic__mmap.html#a21462ad4b75ebde9195515bd9002c444',1,'mio::basic_mmap::cend()'],['../classmio_1_1basic__shared__mmap.html#a23d3c0b3e4675173834b5ea89f3cad1e',1,'mio::basic_shared_mmap::cend()']]],
+  ['char_5ftype_3',['char_type',['../structmio_1_1detail_1_1char__type.html',1,'mio::detail']]],
+  ['char_5ftype_3c_20t_2c_20typename_20std_3a_3aenable_5fif_3c_20std_3a_3ais_5fsame_3c_20typename_20std_3a_3aremove_5fcv_3c_20typename_20std_3a_3aremove_5fpointer_3c_20typename_20std_3a_3aremove_5fextent_3c_20t_20_3e_3a_3atype_20_3e_3a_3atype_20_3e_3a_3atype_2c_20char_20_3e_3a_3avalue_20_3e_3a_3atype_20_3e_4',['char_type&lt; T, typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; typename std::remove_pointer&lt; typename std::remove_extent&lt; T &gt;::type &gt;::type &gt;::type, char &gt;::value &gt;::type &gt;',['../structmio_1_1detail_1_1char__type_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__same_3_ecf826fabdc8d3c3015d7add1346c3e0.html',1,'mio::detail']]],
+  ['char_5ftype_3c_20t_2c_20typename_20std_3a_3avoid_5ft_3c_20typename_20char_5ftype_5fhelper_3c_20t_20_3e_3a_3atype_20_3e_20_3e_5',['char_type&lt; T, typename std::void_t&lt; typename char_type_helper&lt; T &gt;::type &gt; &gt;',['../structmio_1_1detail_1_1char__type_3_01T_00_01typename_01std_1_1void__t_3_01typename_01char__typecb6f22a2025d6c7cc11dacc6c75464d4.html',1,'mio::detail']]],
+  ['char_5ftype_5fhelper_6',['char_type_helper',['../structmio_1_1detail_1_1char__type__helper.html',1,'mio::detail']]],
+  ['cmake_7',['CMake',['../index.html#autotoc_md5',1,'']]],
+  ['composition_8',['Subproject Composition',['../index.html#autotoc_md8',1,'']]],
+  ['const_5fiterator_9',['const_iterator',['../structmio_1_1basic__mmap.html#a382a9c49dccae7207244c233f80280e3',1,'mio::basic_mmap::const_iterator'],['../classmio_1_1basic__shared__mmap.html#a783476c4153a27790ef65dca78897a43',1,'mio::basic_shared_mmap::const_iterator']]],
+  ['const_5fpointer_10',['const_pointer',['../structmio_1_1basic__mmap.html#a39d78f0763a262e99b0ec8e3036d08cc',1,'mio::basic_mmap::const_pointer'],['../classmio_1_1basic__shared__mmap.html#a7e8c99cbd85503cbdb10000bfa1bb315',1,'mio::basic_shared_mmap::const_pointer']]],
+  ['const_5freference_11',['const_reference',['../structmio_1_1basic__mmap.html#a59b7b9338b0d1902600a7734ba0e7de2',1,'mio::basic_mmap::const_reference'],['../classmio_1_1basic__shared__mmap.html#a0f71a45cfa526f35ec1760e35b5c20e2',1,'mio::basic_shared_mmap::const_reference']]],
+  ['const_5freverse_5fiterator_12',['const_reverse_iterator',['../structmio_1_1basic__mmap.html#a27e863f6122dec9f0298111e1cccb25a',1,'mio::basic_mmap::const_reverse_iterator'],['../classmio_1_1basic__shared__mmap.html#a52a17b8b32228f59eec6b99fb138deb6',1,'mio::basic_shared_mmap::const_reverse_iterator']]],
+  ['crbegin_13',['crbegin',['../structmio_1_1basic__mmap.html#a16a5f0a6bd7a40015b08aeebedc30768',1,'mio::basic_mmap::crbegin()'],['../classmio_1_1basic__shared__mmap.html#ab78839febc0af24ca60d7d4e72ce2422',1,'mio::basic_shared_mmap::crbegin()']]],
+  ['create_20a_20mapping_14',['How to create a mapping',['../index.html#autotoc_md2',1,'']]],
+  ['crend_15',['crend',['../structmio_1_1basic__mmap.html#abc6b1af0e58a5230962e918c2bee8ea3',1,'mio::basic_mmap::crend()'],['../classmio_1_1basic__shared__mmap.html#adfe32ed1f6bff51542314dd19519465a',1,'mio::basic_shared_mmap::crend()']]]
+];
