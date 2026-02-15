@@ -377,12 +377,12 @@ Subproject Composition</h3>
 <p>To use mio as a subproject, copy the mio repository to your project's dependencies/externals folder. If your project is version controlled using git, a git submodule or git subtree can be used to syncronize with the updstream repository. The <a href="https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/">use</a> and <a href="https://andrey.nering.com.br/2016/git-submodules-vs-subtrees/">relative advantages</a> of these git facilities is beyond the scope of this document, but in brief, each may be established as follows:</p>
 <div class="fragment"><div class="line"># via git submodule</div>
 <div class="line">cd &lt;my project&#39;s dependencies directory&gt;</div>
-<div class="line">git submodule add -b master https://github.com/mandreyel/mio.git</div>
+<div class="line">git submodule add -b master https://github.com/maxtek6/mio.git</div>
 <div class="line"> </div>
 <div class="line"># via git subtree</div>
 <div class="line">cd &lt;my project&#39;s root directory&gt;</div>
 <div class="line">git subtree add --prefix &lt;path/to/dependencies&gt;/mio       \</div>
-<div class="line">    https://github.com/mandreyel/mio.git master --squash</div>
+<div class="line">    https://github.com/maxtek6/mio.git master --squash</div>
 </div><!-- fragment --><p>Given a mio subdirectory in a project, simply add the following lines to your project's to add mio include directories to your target's include path.</p>
 <div class="fragment"><div class="line">add_subdirectory( path/to/mio/ )</div>
 <div class="line">target_link_libraries( MyTarget PUBLIC &lt;mio::mio | mio&gt; )</div>
